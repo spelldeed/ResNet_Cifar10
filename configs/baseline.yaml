@@ -1,0 +1,16 @@
+experiment_name : baseline
+seed : 50
+device : cpu
+
+dataset:
+  name: cifar10
+  root: ./data
+  num_classes: 10
+
+dataloader:
+  batch_size: 64
+  num_workers: 2
+
+model:
+  name: vanilla_cnn
+  num_classes: 10
